@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_root_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 头部文字 -->
+
+            <LinearLayout
+                android:id="@+id/ll_head_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tv_head_top"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tv_head_bottom" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_guide_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <!-- 地球 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_guide_earth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/iv_guide_earth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@string/content_escription"
+                    android:src="@drawable/guide_13" />
+
+                <ImageView
+                    android:id="@+id/iv_guide_earth_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="70dp"
+                    android:contentDescription="@string/content_escription"
+                    android:src="@drawable/guide_03" />
+
+                <ImageView
+                    android:id="@+id/iv_guide_earth_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/iv_guide_earth_top"
+                    android:contentDescription="@string/content_escription"
+                    android:src="@drawable/guide_04" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_guide_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <!-- 玩什么 -->
+
+            <LinearLayout
+                android:id="@+id/rl_guide_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_guide_house"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal|right"
+                    android:contentDescription="@string/content_escription"
+                    android:src="@drawable/guide_27" />
+
+                <LinearLayout
+                    android:id="@+id/ll_guide_house_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal|left"
+                    android:layout_height="100dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_guide_house_text_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_guide_house_text_top"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_guide_house_text_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_guide_house_text_center"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_guide_house_text_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_guide_house_text_bottom"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_guide_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <!-- 吃什么 -->
+
+            <ImageView
+                android:id="@+id/iv_guide_eat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_09" />
+
+            <ImageView
+                android:id="@+id/iv_guide_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <!-- 住哪里 -->
+
+            <ImageView
+                android:id="@+id/iv_guide_stay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_09" />
+
+            <ImageView
+                android:id="@+id/iv_guide_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <!-- 更多使用贴士 -->
+
+            <ImageView
+                android:id="@+id/iv_guide_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_09" />
+
+            <ImageView
+                android:id="@+id/iv_guide_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <!-- 人口 -->
+
+            <ImageView
+                android:id="@+id/iv_guide_populace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_37" />
+
+            <!-- 人口数量 -->
+
+            <ImageView
+                android:id="@+id/iv_guide_populace_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/num_40" />
+
+            <!-- 旅行家的分享 -->
+
+            <TextView
+                android:id="@+id/tv_guide_populace_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_guide_populace_share" />
+
+            <ImageView
+                android:id="@+id/iv_guide_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <ImageView
+                android:id="@+id/iv_guide_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_06" />
+
+            <!-- 旅游攻略 -->
+
+            <ImageView
+                android:id="@+id/iv_guide_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/content_escription"
+                android:src="@drawable/guide_45" />
+
+            <!-- 开始按钮 -->
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFA54F"
+                android:text="@string/btn_start" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
